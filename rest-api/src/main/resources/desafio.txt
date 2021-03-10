@@ -1,0 +1,5 @@
+Arquitetura Orientada a Serviços:
+Benefícios de se utilizar uma arquitetura orientada a eventos: Flexibilidade do sistema, visto que,
+é possível fazer alterações em tempo real. Compartilhamento de informações em tempo real e com isso melhorar
+a capacidade de resposta das aplicações em tempo real.
+Conceito de API Management: Processo de distribuição, controle e análise de APIs, Segundo a RedHat.
