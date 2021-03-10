@@ -1,9 +1,11 @@
 package com.customer.rest.api.controller.exception;
 
-import java.io.Serializable;
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.ResponseStatus;
 
-public class ObjectNotFoundException extends RuntimeException implements Serializable {
-    private static final long serialVersionUID = 1L;
+
+@ResponseStatus(HttpStatus.NOT_FOUND)
+public class ObjectNotFoundException extends RuntimeException {
 
     public ObjectNotFoundException(String message) {
         super(message);
