@@ -14,3 +14,5 @@ create table usuarios.customer
     num_cpf        varchar(30)  not null,
     dth_nascimento datetime     not null
 );
+
+Para verificar online esta api com swagger, basta acessar: http://localhost:8080/swagger-ui.html e clicar em customer-controller e todos os métodos criados estarão disponíveis para teste e visualização.
