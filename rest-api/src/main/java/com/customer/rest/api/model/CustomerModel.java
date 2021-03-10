@@ -41,4 +41,14 @@ public class CustomerModel {
     @Column(name = "dth_nascimento",nullable = false)
     private Date dataNascimento ;
 
+    public CustomerModel(String endereco, String cidade, String uf, String genero, String nome, String sobrenome, String numCpf, Date dataNascimento) {
+        this.endereco = endereco;
+        this.cidade = cidade;
+        this.uf = uf;
+        this.genero = genero;
+        this.nome = nome;
+        this.sobrenome = sobrenome;
+        this.numCpf = numCpf;
+        this.dataNascimento = dataNascimento;
+    }
 }
