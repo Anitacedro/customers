@@ -2,6 +2,7 @@ package com.customer.rest.api.repository;
 
 import com.customer.rest.api.model.CustomerModel;
 import org.junit.Assert;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +15,7 @@ import java.util.Date;
 public class CustomerRepositoryTest {
 
     @Autowired
-     private CustomerRepository repositoryCustomer;
+    CustomerRepository repositoryCustomer;
 
     @Test
     public void saveTest(){
@@ -31,4 +32,12 @@ public class CustomerRepositoryTest {
         repositoryCustomer.save(customer);
         Assert.assertNotNull(repositoryCustomer.findById(new BigInteger("1")));
     }
+    @Test
+    public void deleteTest(){
+        CustomerModel customer = new CustomerModel("qs07","Brasilia","DF","feminino","ana","guimaraes","01645846474",new Date());
+        repositoryCustomer.save(customer);
+        repositoryCustomer.deleteById(customer.getId());
+        Assertions.assertFalse(repositoryCustomer.findById(new BigInteger("1")).isPresent());
+    }
+
 }

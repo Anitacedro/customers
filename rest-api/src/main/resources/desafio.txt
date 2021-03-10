@@ -1,5 +1,13 @@
-Arquitetura Orientada a Serviços:
+Arquitetura Orientada a Serviços: É um tipo de arquitetura que visa a reutilização de componentes
+por meio de interface de serviços que se comunicam, ou seja, componentes separados que trabalham
+em conjunto para formar uma aplicação funcionável em diferentes sistemas;
+
 Benefícios de se utilizar uma arquitetura orientada a eventos: Flexibilidade do sistema, visto que,
 é possível fazer alterações em tempo real. Compartilhamento de informações em tempo real e com isso melhorar
 a capacidade de resposta das aplicações em tempo real.
-Conceito de API Management: Processo de distribuição, controle e análise de APIs, Segundo a RedHat.
+
+Conceito de API Management: Processo de distribuição, controle e análise de APIs, Segundo a RedHat. Geralmente
+implatada para atender as demandas que mudam rapidamente, é uma camada de gestão sobre o API Gateway.
+Nunca trabalhei.
+
+Referências: https://www.redhat.com/
